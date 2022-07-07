@@ -1,0 +1,43 @@
+.banner {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.banner h2 {
+    font-size: 80px;
+    background: -webkit-linear-gradient(#0c0c0c, hsl(0, 0%, 7%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner h2,
+.banner p {
+    margin: 0;
+
+}
+
+.banner p {
+    font-size: 0.9rem;
+}
+
+.banner button {
+    margin-top: 2rem;
+    border: none;
+    background: transparent;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 1rem;
+    background: black;
+    padding: 10px 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
