@@ -7,15 +7,17 @@ const PacketsInfo = () => {
         <div className='packets_container'>
             <h2>Current Networks </h2>
             <div className='Packets'>
-                {packetsData.map(packetData => {
-                    return (
-                        <div className='packet'>
-                            <h3> {packetData.name} </h3>
-                            <p> {packetData.network} </p>
-                            <p> {packetData.speed} </p>
-                        </div>
-                    )
-                })}
+                {
+                    packetsData.map((packetData, index) => {
+                        return (
+                            <div className='packet' key={index}>
+                                <h3> {packetData.name} </h3>
+                                <p> {packetData.network} </p>
+                                <p> {packetData.speed} </p>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </div>
     )
